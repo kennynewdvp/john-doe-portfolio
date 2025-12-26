@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+/* Effet sur les Cards (Services et Portfolio) */
+.card {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card:hover {
+  background-color: #efefef !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+  cursor: pointer;
+}
+
+/* Effet sur les boutons (S'éclaircir au survol) */
+.btn:hover {
+  filter: brightness(1.2) !important;
+  transition: 0.3s;
+}
