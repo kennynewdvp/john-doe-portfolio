@@ -1,13 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-
-// On crée des petits composants temporaires pour ne pas avoir d'erreurs
-const Home = () => <div className="container mt-5"><h1>Page d'accueil en construction</h1></div>;
-const Services = () => <div className="container mt-5"><h1>Nos Services</h1></div>;
-const Portfolio = () => <div className="container mt-5"><h1>Mon Portfolio</h1></div>;
-const Contact = () => <div className="container mt-5"><h1>Contactez-moi</h1></div>;
-const Legal = () => <div className="container mt-5"><h1>Mentions Légales</h1></div>;
+import Footer from './components/Footer'; 
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Legal from './pages/Legal';
 
 function App() {
   return (
@@ -22,8 +21,9 @@ function App() {
           <Route path="/legal" element={<Legal />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
 
-export default App;
+export default App; 
